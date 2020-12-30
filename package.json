@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/KaelinAlexander/mongo-practice#readme",
   "dependencies": {
+    "mocha": "^8.2.1",
     "mongoose": "^5.11.8"
   }
 }
