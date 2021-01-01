@@ -16,3 +16,12 @@ before(function(done){
         console.log('Connection error:', error)
     })  
 })
+
+// Drop the characters collection before every test.
+
+beforeEach(function(done) {
+    // Drop the collection:
+    mongoose.connection.collections.pokemonchars.drop(function(){
+        done();
+    })
+})
