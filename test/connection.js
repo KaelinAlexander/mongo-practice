@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-// mongoose.set('useFindAndModify', false);
+mongoose.set('useFindAndModify', false);
 
 // ES6 Promises
 
