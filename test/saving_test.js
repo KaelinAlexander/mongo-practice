@@ -1,13 +1,13 @@
 const assert = require('assert');
 const PokemonChar = require('../models/pokemonchar')
 
-//Describe Tests Template
-describe('some demo tests', function() {
-    // Create Tests
-    it('adds two numbers together', function(){
-        assert(2 + 3 === 5)
-    })
-});
+// //Describe Tests Template
+// describe('some demo tests', function() {
+//     // Create Tests
+//     it('adds two numbers together', function(){
+//         assert(2 + 3 === 5)
+//     })
+// });
 
 // Saving Tests
 
