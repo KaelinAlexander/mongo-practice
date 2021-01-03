@@ -3,8 +3,10 @@ const PokemonChar = require('../models/pokemonchar')
 
 describe('Finding records', function() {
 
+    let char;
+
     beforeEach(function(done){
-        let char = new PokemonChar({
+        char = new PokemonChar({
             name: 'Clefairy',
             dexnum: 35,
             type1: 'Fairy',
@@ -21,5 +23,13 @@ describe('Finding records', function() {
                 assert(result.name === 'Clefairy');
                 done();
             })
-        });
+    });
+
+    it('Finds one record by ID from the database', function(done){
+        PokemonChar.findOne({ _id: char._id }).then(function(result){
+            assert(result._id.toString() === char._id.toString());
+            done();
+        })
+    });
+
 });
